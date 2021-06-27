@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<!--
+	App by FreeHTML5.co
+	Twitter: http://twitter.com/fh5co
+	URL: http://freehtml5.co
+-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Free Website by FreeHTML5.co</title>
+	{% load static %}
+    <link rel="icon" href="{% static 'website/img/icon-2.png' %}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Bootstrap  -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/bootstrap.css' %}" />
+<!--	<link rel="stylesheet" href="css/bootstrap.css">-->
+	<!-- Owl Carousel  -->
+    <link rel="stylesheet" href="{% static 'website/css/owl.carousel.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/css/owl.theme.default.min.css' %}" />
+<!--	<link rel="stylesheet" href="css/owl.carousel.css">-->
+<!--	<link rel="stylesheet" href="css/owl.theme.default.min.css">-->
+	<!-- Animate.css -->
+    <link rel="stylesheet" href="{% static 'website/css/animate.css' %}" />
+<!--	<link rel="stylesheet" href="css/animate.css">-->
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!-- Theme style  -->
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}" />
+<!--	<link rel="stylesheet" href="css/style.css">-->
+</head>
+<body>
+
+
+<div id="page-wrap">
+    {% block content %}
+    {% endblock %}
+</div> <!-- main page wrapper -->
+
+	<script src="{% static 'website/js/jquery.min.js' %}"></script>
+	<script src="{% static 'website/js/bootstrap.js' %}"></script>
+	<script src="{% static 'website/js/owl.carousel.js' %}"></script>
+	<script src="{% static 'website/js/wow.min.js' %}"></script>
+	<script src="{% static 'website/js/main.js' %}"></script>
+</body>
+</html>

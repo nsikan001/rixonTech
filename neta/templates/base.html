@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Physical Theraphy &mdash; Website Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'neta/fonts/icomoon/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'neta/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'neta/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'neta/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'neta/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'neta/css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'neta/css/bootstrap-datepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'neta/fonts/flaticon/font/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'neta/css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'neta/css/rangeslider.css' %}">
+
+    <link rel="stylesheet" href="{% static 'neta/css/style.css' %}">
+
+
+</head>
+<body>
+
+<div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    <header class="site-navbar" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-11 col-xl-4">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">PhysicalTherapy<span class="text-primary">.</span> </a></h1>
+          </div>
+          <div class="col-12 col-md-8 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="active"><a href="{% url 'index' %}"><span>Home</span></a></li>
+                <li class="has-children">
+                  <a href="{% url 'services' %}"><span>Services</span></a>
+                  <ul class="dropdown arrow-top">
+                    <li><a href="#">Physical Therapy</a></li>
+                    <li><a href="#">Massage Therapy</a></li>
+                    <li><a href="#">Chiropractic Therapy</a></li>
+                    <li class="has-children">
+                      <a href="#">Dropdown</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Physical Therapy</a></li>
+                        <li><a href="#">Massage Therapy</a></li>
+                        <li><a href="#">Chiropractic Therapy</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="{% url 'about' %}"><span>About</span></a></li>
+                <li><a href="{% url 'blog' %}"><span>Blog</span></a></li>
+                <li><a href="{% url 'contact' %}"><span>Contact</span></a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+
+
+    </header>
+
+<div id="page-wrap">
+    {% block content %}
+    {% endblock %}
+</div> <!-- main page wrapper -->
+
+
+    {% load static %}
+    <script src="{% static 'neta/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'neta/js/jquery-migrate-3.0.1.min.js' %}"></script>
+    <script src="{% static 'neta/js/jquery-ui.js' %}"></script>
+    <script src="{% static 'neta/js/popper.min.js' %}"></script>
+    <script src="{% static 'neta/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'neta/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'neta/js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'neta/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'neta/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'neta/js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'neta/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'neta/js/bootstrap-datepicker.min.js' %}"></script>
+    <script src="{% static 'neta/js/aos.js' %}"></script>
+    <script src="{% static 'neta/js/rangeslider.min.js' %}"></script>
+
+    <script src="{% static 'neta/js/typed.js' %}"></script>
+    <script>
+            var typed = new Typed('.typed-words', {
+            strings: ["pain"," stress"," fatigue"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 4000,
+            startDelay: 1000,
+            loop: true,
+            showCursor: true
+            });
+
+    </script>
+    <script src="{% static 'neta/js/main.js' %}"></script>
+
+</body>
+</html>
