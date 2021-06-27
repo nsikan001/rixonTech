@@ -128,7 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_STORAGE = 'whitenoise.storage,CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -147,6 +147,6 @@ EMAIL_HOST_PASSWORD = "nsikan01"
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
-django_heroku.settings(locals())
+
 
 
