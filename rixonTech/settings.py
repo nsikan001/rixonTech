@@ -147,6 +147,6 @@ EMAIL_HOST_PASSWORD = "nsikan01"
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
-
+django_heroku.settings(locals())
 
 
